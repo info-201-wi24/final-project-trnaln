@@ -1,7 +1,7 @@
 # Title of Your Final Project Here 
 ## INFO 201 "Foundational Skills for Data Science"
 
-Authors: Your names here
+Authors: Raizel Lagunero, Keyan Russell, Alan Tran
 
 
 For the Final Project -- Data Wrangling, add the following to this code repository:
