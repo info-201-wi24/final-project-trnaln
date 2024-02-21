@@ -14,4 +14,4 @@ joined <- joined %>% arrange(-overall_pop)
 
 joined <- joined %>% mutate(Is_Top_100 = str_detect(as.character(Rank), "[0123456789]"))
 
-summ_df <- joined%>% group_by(Is_Top_100, artist_name, track_name) %>% summarize(overall_energy = danceability + energy + valence + tempo / 4)
+summ_df <- joined%>% group_by(Is_Top_100, artist_name, track_name) %>% summarize(overall_energy = danceability + energy + valence / 3)
