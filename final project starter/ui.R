@@ -26,6 +26,7 @@ overview_tab <- tabPanel("Overview",
    h1("Introduction"),
    img(src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1200px-TikTok_logo.svg.png"),
    img(src = "https://organicmusicmarketing.com/cdn/shop/articles/billboard_hot_100.png?v=1675781632&width=2048"),
+   img(src = "https://nebula.wsimg.com/01358800cfc7d5690ef6fed948780c80?AccessKeyId=90A1D62ACD57AE5D8697&disposition=0&alloworigin=1"),
    p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
      mainstream media has given rise to the popularity of various artists, songs, and genres. TikTok’s 
      algorithm and marketability have caused many artists to quickly gain recognition, and smaller, underground
