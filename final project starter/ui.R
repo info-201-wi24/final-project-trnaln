@@ -5,6 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 library(bslib)
+library(markdown)
 my_theme <- bs_theme(bg = "#29293D", #background
                      fg = "ivory", #foreground color
                      primary = "white", # primary color
@@ -22,10 +23,8 @@ viz_2_df_colnames <- c(
 )
 
 overview_tab <- tabPanel("Overview",
-   h1("Introduction "),
-   includeMarkdown("image1"),
-   img("src=1200px-TikTok_logo.svg.png"),
-   img("src=E6rLxiNWEAA2nej.png"),
+   h1("Introduction"),
+   img(src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1200px-TikTok_logo.svg.png"),
    p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
      mainstream media has given rise to the popularity of various artists, songs, and genres. TikTok’s 
      algorithm and marketability have caused many artists to quickly gain recognition, and smaller, underground
