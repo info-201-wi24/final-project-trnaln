@@ -31,16 +31,17 @@ overview_tab <- tabPanel("Overview",
 viz_1_sidebar <- sidebarPanel(
   h2("Options for graph"),
   selectInput(
-    inputId = "viz_1_y_axis",
-    label = "Y Axis Choices"
-    
+    inputId = "artist_selection",
+    label = "X Axis Choices",
+    choices = df$artist_name,
+    multiple = TRUE
   )
   
 )
 
 viz_1_main_panel <- mainPanel(
   h2("Artist Popularity"),
-  plotlyOutput(outputId = "viz_2_plot")
+  plotlyOutput(outputId = "viz_1_plot")
 )
 
 viz_1_tab <- tabPanel("Artist Popularity",
