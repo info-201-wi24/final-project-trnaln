@@ -4,7 +4,11 @@
 library(dplyr)
 library(ggplot2)
 library(plotly)
-
+library(bslib)
+my_theme <- bs_theme(bg = "#0b3d91", #background
+                     fg = "white", #foreground color
+                     primary = "#FCC780", # primary color
+)
 df <- read.csv("https://raw.githubusercontent.com/info-201-wi24/final-project-trnaln/main/JoinedDataset.csv")
 
 overview_tab <- tabPanel("Overview",
@@ -16,15 +20,20 @@ overview_tab <- tabPanel("Overview",
 
 viz_1_sidebar <- sidebarPanel(
   h2("Options for graph"),
-  #TODO: Put inputs for modifying graph here
+  selectInput(
+    inputId = "viz_1_y_axis",
+    label = "Y Axis Choices"
+    
+  )
+  
 )
 
 viz_1_main_panel <- mainPanel(
-  h2("Vizualization 1 Title"),
-  # plotlyOutput(outputId = "your_viz_1_output_id")
+  h2("Artist Popularity"),
+  plotlyOutput(outputId = "viz_2_plot")
 )
 
-viz_1_tab <- tabPanel("Viz 1 tab title",
+viz_1_tab <- tabPanel("Artist Popularity",
   sidebarLayout(
     viz_1_sidebar,
     viz_1_main_panel
