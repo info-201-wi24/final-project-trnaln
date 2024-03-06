@@ -30,8 +30,8 @@ overview_tab <- tabPanel("Overview",
      songs tend to have in common in order to gain a better understanding of why certain songs have a meteoric
      rise on TikTok and to be able to visualize the correlation between viral songs and artist popularity."),
    h1("Questions"),
-   p("1. What properties do popular songs on TikTok and top charting songs have? How do they differ?
-      2. What is the song attribute that tends to be the most effective in captivating its listeners?
+   p("1. What properties do popular songs on TikTok and top charting songs have? How do they differ?"),
+   p("2. What is the song attribute that tends to be the most effective in captivating its listeners?
       3. Could there be a way to predict if a song would become popular?
       4. To what extent does genre influence what songs might become popular overall?
       5. Does an artist’s popularity influence what songs might become popular on TikTok?
