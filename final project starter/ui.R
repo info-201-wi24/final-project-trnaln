@@ -5,9 +5,9 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 library(bslib)
-my_theme <- bs_theme(bg = "#0b3d91", #background
-                     fg = "white", #foreground color
-                     primary = "#FCC780", # primary color
+my_theme <- bs_theme(bg = "#29293D", #background
+                     fg = "ivory", #foreground color
+                     primary = "white", # primary color
 )
 df <- read.csv("https://raw.githubusercontent.com/info-201-wi24/final-project-trnaln/main/JoinedDataset.csv")
 
@@ -23,6 +23,9 @@ viz_2_df_colnames <- c(
 
 overview_tab <- tabPanel("Overview",
    h1("Introduction "),
+   includeMarkdown("image1"),
+   img("src=1200px-TikTok_logo.svg.png"),
+   img("src=E6rLxiNWEAA2nej.png"),
    p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
      mainstream media has given rise to the popularity of various artists, songs, and genres. TikTok’s 
      algorithm and marketability have caused many artists to quickly gain recognition, and smaller, underground
@@ -139,6 +142,7 @@ conclusion_tab <- tabPanel("Conclusion",
 
 
 ui <- navbarPage("Properties of a Popular Song",
+  theme = my_theme,
   overview_tab,
   viz_1_tab,
   viz_2_tab,
