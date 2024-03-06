@@ -21,15 +21,6 @@ viz_2_df_colnames <- c(
   "Tempo" = "tempo"
 )
 
-viz_3_df_colnames <- colnames(df)
-
-viz_3_df_colnames <- c(
-  "Genres" = "Genres",
-  "Artist" = "artist_name",
-  "Song" = "track_name",
-  "Rank" = "Rank"
-)
-
 overview_tab <- tabPanel("Overview",
    h1("Introduction "),
    p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
@@ -46,7 +37,9 @@ overview_tab <- tabPanel("Overview",
    p("5. Does an artist’s popularity influence what songs might become popular on TikTok?"),
    p("6. Can niche genres find their way to emerge to create their own space in the music industry or do they melt into a larger genre?"),
    h1("Data Collection"),
-   p("This project's data is collected through Spotify's API and Billboard Top 100 Charts from 2022-2023.")
+   p("This project's data is collected through Spotify's API and Billboard Top 100 Charts from 2022-2023."),
+   p("TikTok Song DataSet: https://www.kaggle.com/code/antoniosabatini/tiktok-popularity-track-eda-ml-models/input."),
+   p("Billboard Top 100 Songs: https://www.kaggle.com/datasets/calebpool/billboard-top-100-artist-week-of-2182023 .")
    
 )
 
@@ -103,27 +96,15 @@ viz_2_tab <- tabPanel("What Makes up a Song",
 )
 
 ## VIZ 3 TAB INFO
-#Bar plot, 
-#x = song title, 
-#y = rank in the top 100 (inverse, 1 has the top value), 
-#interactive = interactive is checking which genres are in the top 100, 
 
 viz_3_sidebar <- sidebarPanel(
   h2("Options for graph"),
   #TODO: Put inputs for modifying graph here
-  select_widget <-
-    selectInput(
-    inputId = "viz_3_x_axis",
-    label = "X Axis Choices",
-    choices = df$Genres,
-    multiple = TRUE,
-    #selected = "Rock"
-  )
 )
 
 viz_3_main_panel <- mainPanel(
   h2("Vizualization 3 Title"),
-  plotlyOutput(outputId = "viz_3_plot")
+  # plotlyOutput(outputId = "your_viz_1_output_id")
 )
 
 viz_3_tab <- tabPanel("Viz 3 tab title",
