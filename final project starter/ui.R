@@ -40,12 +40,14 @@ overview_tab <- tabPanel("Overview",
    p("4. To what extent does genre influence what songs might become popular overall?"),
    p("5. Does an artist’s popularity influence what songs might become popular on TikTok?"),
    p("6. Can niche genres find their way to emerge to create their own space in the music industry or do they melt into a larger genre?"),
+   
    h1("Data Collection"),
    p("This project's data is collected through Spotify's API and Billboard Top 100 Charts from 2022-2023."),
    p("TikTok Song DataSet: https://www.kaggle.com/code/antoniosabatini/tiktok-popularity-track-eda-ml-models/input."),
    p("Billboard Top 100 Songs: https://www.kaggle.com/datasets/calebpool/billboard-top-100-artist-week-of-2182023 ."),
+   p("There were no ethical review processes conducted in the collection of the dataset. This prject's data is limited
+     to song on TikTok and Billboard Top 100 songs. It is not an accurate representation of user populations outside of TikTok and Spotify."),
    img(src = "https://i.pinimg.com/originals/1d/28/86/1d288661840f89f7ece0d1b72f2289ee.gif")
-   
 )
 
 ## VIZ 1 TAB INFO
@@ -136,7 +138,7 @@ viz_3_tab <- tabPanel("Genres in the Top 100",
 
 conclusion_tab <- tabPanel("Conclusion",
   strong("Does an artist’s popularity influence what songs might become popular on TikTok?"),
-  p("answer"),
+  p("An artist's popularity correlates with the amount of songs they have trending on TikTok."),
   strong("What is the song attribute that tends to be the most effective in captivating its listeners?"),
   p("answer"),
   strong("To what extent does genre influence what songs might become popular overall?"),
