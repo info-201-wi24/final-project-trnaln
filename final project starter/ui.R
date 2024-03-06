@@ -132,13 +132,15 @@ viz_3_tab <- tabPanel("Genres in the Top 100",
 ## CONCLUSIONS TAB INFO
 
 conclusion_tab <- tabPanel("Conclusion",
-  h1("1. What is the song attribute that tends to be the most effective in captivating its listeners?"),
-  p(""),
-  h1("2. To what extent does genre influence what songs might become popular overall?"),
+  strong("Does an artist’s popularity influence what songs might become popular on TikTok?"),
+  p("answer"),
+  strong("What is the song attribute that tends to be the most effective in captivating its listeners?"),
+  p("answer"),
+  strong("To what extent does genre influence what songs might become popular overall?"),
   p("Genre has heavy influence of what songs can crack the top 100. Only 2 songs found in our dataset fell under the 'Rock' genre,
      the rest fell uner Rap/Hip-Hop or Pop. No other genre was able to appear in the top 100, so a popular song with a niche genre 
      on Spotify/TikTok doesn't mean that it will translate to commercial success."),
-  h1("3. Does an artist’s popularity influence what songs might become popular on TikTok?"),
+  
           
 )
 

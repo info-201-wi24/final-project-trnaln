@@ -13,7 +13,7 @@ server <- function(input, output){
       #filter for user's artist
       filter(artist_name %in% input$artist_selection)
       
-    
+  
     viz_1_plot <- ggplot(data = viz_1_filtered_df) +
       geom_col(mapping =
                    aes(x = artist_name,
