@@ -38,4 +38,19 @@ server <- function(input, output){
                          ))
       return(ggplotly(viz_2_plot))
   })
+  
+  #viz 3 plot code
+  output$viz_3_plot <- renderPlotly({
+    viz_3_filtered_df <- df 
+      #filter for genre type
+      #filter(Genres %in% input$Genres_selection)
+    
+    viz_3_plot <- ggplot(data = viz_3_filtered_df) +
+      geom_col(mapping =
+                 aes(x = track_name,
+                     y = Rank,
+                     color = Genres))
+    
+    return(ggplotly(viz_3_plot))
+  })
 }
