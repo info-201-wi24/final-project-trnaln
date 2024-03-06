@@ -8,7 +8,7 @@ library(plotly)
 df <- read.csv("https://raw.githubusercontent.com/info-201-wi24/final-project-trnaln/main/JoinedDataset.csv")
 
 overview_tab <- tabPanel("Overview",
-   h1("Properties of a Popular Song"),
+   h1("⋆ ˚｡⋆୨୧˚⋆ ˚｡⋆ "),
    p("some explanation")
 )
 
@@ -78,7 +78,7 @@ conclusion_tab <- tabPanel("Conclusion Tab Title",
 
 
 
-ui <- navbarPage("Example Project Title",
+ui <- navbarPage("Properties of a Popular Song",
   overview_tab,
   viz_1_tab,
   viz_2_tab,
