@@ -24,8 +24,8 @@ viz_2_df_colnames <- c(
 
 overview_tab <- tabPanel("Overview",
    h1("Introduction"),
-   img(src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1200px-TikTok_logo.svg.png"),
-   img(src = "https://organicmusicmarketing.com/cdn/shop/articles/billboard_hot_100.png?v=1675781632&width=2048"),
+   #img(src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1200px-TikTok_logo.svg.png"),
+   #img(src = "https://organicmusicmarketing.com/cdn/shop/articles/billboard_hot_100.png?v=1675781632&width=2048"),
    img(src = "https://nebula.wsimg.com/01358800cfc7d5690ef6fed948780c80?AccessKeyId=90A1D62ACD57AE5D8697&disposition=0&alloworigin=1"),
    p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
      mainstream media has given rise to the popularity of various artists, songs, and genres. TikTok’s 
@@ -142,7 +142,7 @@ conclusion_tab <- tabPanel("Conclusion",
   p("Genre has heavy influence of what songs can crack the top 100. Only 2 songs found in our dataset fell under the 'Rock' genre,
      the rest fell uner Rap/Hip-Hop or Pop. No other genre was able to appear in the top 100, so a popular song with a niche genre 
      on Spotify/TikTok doesn't mean that it will translate to commercial success."),
-  
+  img(src= "https://media.tenor.com/15YUsMWt4FEAAAAi/music.gif")
           
 )
 
