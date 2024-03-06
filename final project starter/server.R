@@ -42,7 +42,6 @@ server <- function(input, output){
   #viz 3 plot code
   output$viz_3_plot <- renderPlotly({
     viz_3_filtered_df <- df %>%
-      #group_by(Rank) %>% 
       #filter for the genres of top 100 on the billboard
       filter(Is_Top_100 == TRUE) %>% 
       filter(Genres %in% input$viz_3_x_axis)

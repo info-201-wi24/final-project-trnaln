@@ -103,7 +103,7 @@ viz_2_tab <- tabPanel("What Makes up a Song",
 #y = rank in the top 100
 #interactive - interactive is checking which genres are in the top 100
 viz_3_sidebar <- sidebarPanel(
-  h2("Options for graph"),
+  h2("Select Genres"),
   #TODO: Put inputs for modifying graph here
   select_widget <- 
     selectInput(
@@ -115,11 +115,11 @@ viz_3_sidebar <- sidebarPanel(
 )
 
 viz_3_main_panel <- mainPanel(
-  h2("Vizualization 3 Title"),
+  h2("Tracks in the Top 100 v. Rank"),
   plotlyOutput(outputId = "viz_3_plot")
 )
 
-viz_3_tab <- tabPanel("Viz 3 tab title",
+viz_3_tab <- tabPanel("Genres in the Top 100",
   sidebarLayout(
     viz_3_sidebar,
     viz_3_main_panel
