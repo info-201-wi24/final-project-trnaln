@@ -43,7 +43,8 @@ overview_tab <- tabPanel("Overview",
    h1("Data Collection"),
    p("This project's data is collected through Spotify's API and Billboard Top 100 Charts from 2022-2023."),
    p("TikTok Song DataSet: https://www.kaggle.com/code/antoniosabatini/tiktok-popularity-track-eda-ml-models/input."),
-   p("Billboard Top 100 Songs: https://www.kaggle.com/datasets/calebpool/billboard-top-100-artist-week-of-2182023 .")
+   p("Billboard Top 100 Songs: https://www.kaggle.com/datasets/calebpool/billboard-top-100-artist-week-of-2182023 ."),
+   img(src = "https://i.pinimg.com/originals/1d/28/86/1d288661840f89f7ece0d1b72f2289ee.gif")
    
 )
 
