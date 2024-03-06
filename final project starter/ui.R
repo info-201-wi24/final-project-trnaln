@@ -96,15 +96,25 @@ viz_2_tab <- tabPanel("What Makes up a Song",
 )
 
 ## VIZ 3 TAB INFO
-
+#Bar Plot
+#x = song title
+#y = rank in the top 100
+#interactive - interactive is checking which genres are in the top 100
 viz_3_sidebar <- sidebarPanel(
   h2("Options for graph"),
   #TODO: Put inputs for modifying graph here
+  select_widget <- 
+    selectInput(
+      inputId = "viz_3_x_axis",
+      label = "X Axis Choices",
+      choices = df$Genres,
+      multiple = TRUE
+    )
 )
 
 viz_3_main_panel <- mainPanel(
   h2("Vizualization 3 Title"),
-  # plotlyOutput(outputId = "your_viz_1_output_id")
+  plotlyOutput(outputId = "viz_3_plot")
 )
 
 viz_3_tab <- tabPanel("Viz 3 tab title",

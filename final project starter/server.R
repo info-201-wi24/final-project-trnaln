@@ -41,15 +41,17 @@ server <- function(input, output){
   
   #viz 3 plot code
   output$viz_3_plot <- renderPlotly({
-    viz_3_filtered_df <- df 
-      #filter for genre type
+    viz_3_filtered_df <- df %>%
+      group_by(Rank) %>% 
+      #filter for the genres of top 100 on the billboard
+      filter(Is_Top_100 == TRUE)
       #filter(Genres %in% input$Genres_selection)
     
     viz_3_plot <- ggplot(data = viz_3_filtered_df) +
       geom_col(mapping =
-                 aes(x = track_name,
-                     y = Rank,
-                     color = Genres))
+                 aes(x = track_name, #was track_name
+                     y = Rank, #was Rank
+                     color = Genres)) #was Genres
     
     return(ggplotly(viz_3_plot))
   })
