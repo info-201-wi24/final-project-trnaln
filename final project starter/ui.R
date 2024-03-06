@@ -129,12 +129,9 @@ viz_3_tab <- tabPanel("Genres in the Top 100",
 ## CONCLUSIONS TAB INFO
 
 conclusion_tab <- tabPanel("Conclusion",
-  h1("1. What properties do popular songs on TikTok and top charting songs have? How do they differ?"),
-  h1("2. What is the song attribute that tends to be the most effective in captivating its listeners?"),
-  h1("3. Could there be a way to predict if a song would become popular?"),
-  h1("4. To what extent does genre influence what songs might become popular overall?"),
-  h1("5. Does an artist’s popularity influence what songs might become popular on TikTok?"),
-  h1("6. Can niche genres find their way to emerge to create their own space in the music industry or do they melt into a larger genre?"),
+  h1("1. What is the song attribute that tends to be the most effective in captivating its listeners?"),
+  h1("2. To what extent does genre influence what songs might become popular overall?"),
+  h1("3. Does an artist’s popularity influence what songs might become popular on TikTok?"),
           
 )
 
