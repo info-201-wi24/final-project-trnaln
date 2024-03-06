@@ -23,6 +23,9 @@ viz_2_df_colnames <- c(
 
 overview_tab <- tabPanel("Overview",
    h1("Introduction "),
+   includeMarkdown("image1"),
+   img("src=1200px-TikTok_logo.svg.png"),
+   img("src=E6rLxiNWEAA2nej.png"),
    p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
      mainstream media has given rise to the popularity of various artists, songs, and genres. TikTok’s 
      algorithm and marketability have caused many artists to quickly gain recognition, and smaller, underground
