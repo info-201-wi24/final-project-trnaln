@@ -31,8 +31,23 @@ viz_3_df_colnames <- c(
 )
 
 overview_tab <- tabPanel("Overview",
-   h1("⋆ ˚｡⋆୨୧˚⋆ ˚｡⋆ "),
-   p("some explanation")
+   h1("Introduction "),
+   p("Music is an art heavily integrated with advancing technology, and TikTok’s growing popularity on 
+     mainstream media has given rise to the popularity of various artists, songs, and genres. TikTok’s 
+     algorithm and marketability have caused many artists to quickly gain recognition, and smaller, underground
+     artists are given the opportunity to gain more listeners. This project analyzes the attributes that popular
+     songs tend to have in common in order to gain a better understanding of why certain songs have a meteoric
+     rise on TikTok and to be able to visualize the correlation between viral songs and artist popularity."),
+   h1("Questions"),
+   p("1. What properties do popular songs on TikTok and top charting songs have? How do they differ?"),
+   p("2. What is the song attribute that tends to be the most effective in captivating its listeners?"),
+   p("3. Could there be a way to predict if a song would become popular?"),
+   p("4. To what extent does genre influence what songs might become popular overall?"),
+   p("5. Does an artist’s popularity influence what songs might become popular on TikTok?"),
+   p("6. Can niche genres find their way to emerge to create their own space in the music industry or do they melt into a larger genre?"),
+   h1("Data Collection"),
+   p("This project's data is collected through Spotify's API and Billboard Top 100 Charts from 2022-2023.")
+   
 )
 
 ## VIZ 1 TAB INFO
