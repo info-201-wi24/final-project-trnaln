@@ -1,6 +1,9 @@
 ## OVERVIEW TAB INFO
 ## does this work
 ## hahah yea
+library(dplyr)
+library(ggplot2)
+library(plotly)
 
 overview_tab <- tabPanel("Overview",
    h1("Properties of a Popular Song"),
