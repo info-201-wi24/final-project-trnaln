@@ -105,12 +105,12 @@ viz_2_tab <- tabPanel("What Makes up a Song",
 #y = rank in the top 100
 #interactive - interactive is checking which genres are in the top 100
 viz_3_sidebar <- sidebarPanel(
-  h2("Select Genres"),
+  h2("Trends in Genre"),
   #TODO: Put inputs for modifying graph here
   select_widget <- 
     selectInput(
       inputId = "viz_3_x_axis",
-      label = "X Axis Choices",
+      label = "Select a Genre:",
       choices = df$Genres,
       multiple = TRUE
     ),

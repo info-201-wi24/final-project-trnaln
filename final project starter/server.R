@@ -20,7 +20,10 @@ server <- function(input, output){
                        y = artist_pop,
                        fill = artist_name,
                        text = paste("Artist:", artist_name, "Artist Popularity:", artist_pop, "Track Name:", track_name)
-                       ))
+                       )) +
+      labs (x = "Artist Name",
+            y = "Artist Popularity")
+
                  
     return(ggplotly(viz_1_plot, tooltip = "text"))
   })
