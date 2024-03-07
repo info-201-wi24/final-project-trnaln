@@ -53,10 +53,8 @@ overview_tab <- tabPanel("Overview",
 ## VIZ 1 TAB INFO
 
 viz_1_sidebar <- sidebarPanel(
-  h2("Overall Popularity"),
-  p("Does an artist’s popularity influence what songs might become popular on TikTok?
-    Overall popularity is determined by an individual artist's popularity and their track's popularity.
-    This graph shows how popular an artist is and how many tracks they have trending on TikTok."),
+  h2("Does an artist’s popularity influence what songs might become popular on TikTok?"),
+  p("This graph shows how popular an artist is and how many tracks they have trending on TikTok."),
   selectInput(
     inputId = "artist_selection",
     label = "Select an artist to view their overall popularity:",
@@ -71,7 +69,7 @@ viz_1_main_panel <- mainPanel(
   plotlyOutput(outputId = "viz_1_plot")
 )
 
-viz_1_tab <- tabPanel("Popularity Impact",
+viz_1_tab <- tabPanel("Artist Popularity",
   sidebarLayout(
     viz_1_sidebar,
     viz_1_main_panel
