@@ -10,19 +10,19 @@ server <- function(input, output){
   # TODO Make outputs based on the UI inputs here
   output$viz_1_plot <- renderPlotly({
     viz_1_filtered_df <- df %>%
-      distinct(artist_name, .keep_all = TRUE) %>%
       #filter for user's artist
       filter(artist_name %in% input$artist_selection)
       
   
     viz_1_plot <- ggplot(data = viz_1_filtered_df) +
       geom_col(mapping =
-                   aes(x = artist_name,
+                   aes(x = track_name,
                        y = artist_pop,
-                       color = track_name
+                       fill = artist_name,
+                       text = paste("Artist:", artist_name, "Artist Popularity:", artist_pop, "Track Name:", track_name)
                        ))
                  
-    return(ggplotly(viz_1_plot))
+    return(ggplotly(viz_1_plot, tooltip = "text"))
   })
   # viz 2 plot code
   output$viz_2_plot <- renderPlotly({
