@@ -85,10 +85,9 @@ viz_2_sidebar <- sidebarPanel(
       choices = viz_2_df_colnames,
       selected = "tempo"
   ),
-  p("This graph displays the certain attributes that make up a song, ranging
-    from tempo to valence. Songs are seperated by their track name."),
-  p("Danceability: A representation of how suitable a track is for dancing determined by elements of 
-    tempo, rhythm, and regularity."),
+  p("This graph displays the certain attributes that make up a song."),
+  p("Danceability: A representation of how suitable a track is for dancing 
+    determined by elements of tempo, rhythm, and regularity."),
   p("Energy: A representation of the intensity and
     activity of a song."),
   p("Valence: A representation of the positiveness of the
