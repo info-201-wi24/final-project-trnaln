@@ -19,7 +19,9 @@ server <- function(input, output){
                    aes(x = artist_name,
                        y = artist_pop,
                        color = track_name
-                       ))
+                       )) +
+      labs (x = "Artist Name",
+            y = "Artist Popularity")
                  
     return(ggplotly(viz_1_plot))
   })
