@@ -122,7 +122,7 @@ viz_3_sidebar <- sidebarPanel(
       choices = df$Genres,
       multiple = TRUE
     ),
-  p("This graph displays the amount of songs under certain genres if selected. Only includes genres
+  p("This graph displays the amount of songs under certain genres if selected, and it only includes genres
     and songs that appear in the Billboard Top 100.")
 )
 
