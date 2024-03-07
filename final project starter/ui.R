@@ -17,7 +17,6 @@ viz_2_df_colnames <- colnames(df)
 viz_2_df_colnames <- c(
   "Danceability" = "danceability",
   "Energy" = "energy", 
-  "Liveness" = "liveness",
   "Valence" = "valence",
   "Tempo" = "tempo"
 )
@@ -76,15 +75,16 @@ viz_1_tab <- tabPanel("Artist Popularity",
 ## VIZ 2 TAB INFO
 
 viz_2_sidebar <- sidebarPanel(
-  h2("Graph Options"),
+  h2("Attribute Options"),
   #TODO: Put inputs for modifying graph here
   select_widget <- 
     selectInput(
       inputId = "viz_2_y_axis",
-      label = "Y Axis Choices",
+      label = "Select Attribute:",
       choices = viz_2_df_colnames,
       selected = "tempo"
-  )
+  ),
+  p("This graph displays the certain attributes that make up a song, ranging from tempo to valence. Songs are seperated by their track name.")
 )
 
 viz_2_main_panel <- mainPanel(
