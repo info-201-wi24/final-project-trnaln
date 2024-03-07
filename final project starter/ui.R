@@ -142,7 +142,14 @@ conclusion_tab <- tabPanel("Conclusion",
   example, Doja Cat only has a popularity rating of 80, but she has eight trending songs: “Ain’t Shit”, “Boss 
   Bitch”, “Freak”, “Kiss Me More (ft. SZA)”, “Need to Know”, “Say So”,  “Woman”, and “You Right”. "),
   strong("What is the song attribute that tends to be the most effective in captivating its listeners?"),
-  p("answer"),
+  p("Danceability seems the most effective attribute in a song that captivates a listener, as most songs on our
+    dataset had a danceability higher than 0.5 rating. High danceability understandably helped songs perform on
+    TikTok as songs with catchy hooks and easily-remembered lyrics can stick in our heads and can be heard 
+    multiple times over without much issue. Tempo, energy, and valence had little to no correlation on how
+    a song performed, as many of the songs varied from high to low. Tempo was generally around 120 BPM, but
+    many songs were above and below the average of 120 BPM. Valence and energy also had little to no
+    correlation to captivating a listener as songs on our datasets varied wildly from low to high valence
+    and energy."),
   strong("To what extent does genre influence what songs might become popular overall?"),
   p("Genre has a heavy influence on what songs can crack the top 100. Only 2 songs found in 
     our dataset fell under the ‘Rock’ genre, while the rest fell under either Rap/Hip-Hop or Pop. 
