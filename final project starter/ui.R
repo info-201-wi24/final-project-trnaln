@@ -133,7 +133,13 @@ viz_3_tab <- tabPanel("Genres in the Top 100",
 
 conclusion_tab <- tabPanel("Conclusion",
   strong("Does an artist’s popularity influence what songs might become popular on TikTok?"),
-  p("An artist's popularity correlates with the amount of songs they have trending on TikTok."),
+  p("An artist's popularity correlates with the amount of songs they have trending on TikTok. Artists with a 
+  high popularity tend to have more trending TikTok songs. Drake has the highest popularity score of ninety-five
+  and Pia Baris has the lowest popularity score of eighteen. Drake has two trending TikTok songs, “Jimmy Cooks
+  (ft. 21 Savage)” and “Toosie Slide”, while Pia Baris only has one song, “Red Flag”. However, artist popularity
+  can only contribute so much, and there are other underlying characteristics that make up a popular song. For
+  example, Doja Cat only has a popularity rating of 80, but she has eight trending songs: “Ain’t Shit”, “Boss 
+  Bitch”, “Freak”, “Kiss Me More (ft. SZA)”, “Need to Know”, “Say So”,  “Woman”, and “You Right”. "),
   strong("What is the song attribute that tends to be the most effective in captivating its listeners?"),
   p("answer"),
   strong("To what extent does genre influence what songs might become popular overall?"),
