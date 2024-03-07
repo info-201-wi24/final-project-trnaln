@@ -1,4 +1,4 @@
-# TProperties of a Popular Song
+# Properties of a Popular Song
 ## INFO 201 "Foundational Skills for Data Science"
 
 Authors: Raizel Lagunero, Keyan Russell, Alan Tran
