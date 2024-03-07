@@ -85,7 +85,6 @@ viz_2_sidebar <- sidebarPanel(
       choices = viz_2_df_colnames,
       selected = "tempo"
   )
-  
 )
 
 viz_2_main_panel <- mainPanel(
@@ -114,12 +113,14 @@ viz_3_sidebar <- sidebarPanel(
       label = "X Axis Choices",
       choices = df$Genres,
       multiple = TRUE
-    )
+    ),
+  p("This graph displays the amount of songs under certain genres if selected. Only includes genres
+    and songs that appear in the Billboard Top 100.")
 )
 
 viz_3_main_panel <- mainPanel(
   h2("Tracks in the Top 100 v. Rank"),
-  plotlyOutput(outputId = "viz_3_plot")
+  plotlyOutput(outputId = "viz_3_plot"),
 )
 
 viz_3_tab <- tabPanel("Genres in the Top 100",
