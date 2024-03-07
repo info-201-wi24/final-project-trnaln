@@ -50,7 +50,9 @@ server <- function(input, output){
       geom_col(mapping =
                  aes(x = track_name, #was track_name
                      y = Rank, #was Rank
-                     color = Genres)) #was Genres
+                     color = Genres)) + #was Genres 
+      labs(x = "Song Titles (Sorted Alphabetically)", 
+           y = "Rank in Top 100")
     
     return(ggplotly(viz_3_plot))
   })
