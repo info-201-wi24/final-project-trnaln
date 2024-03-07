@@ -34,13 +34,10 @@ overview_tab <- tabPanel("Overview",
      songs tend to have in common in order to gain a better understanding of why certain songs have a meteoric
      rise on TikTok and to be able to visualize the correlation between viral songs and artist popularity."),
    h1("Questions"),
-   p("1. What properties do popular songs on TikTok and top charting songs have? How do they differ?"),
+   p("1. Does an artist’s popularity influence what songs might become popular on TikTok?"),
    p("2. What is the song attribute that tends to be the most effective in captivating its listeners?"),
-   p("3. Could there be a way to predict if a song would become popular?"),
-   p("4. To what extent does genre influence what songs might become popular overall?"),
-   p("5. Does an artist’s popularity influence what songs might become popular on TikTok?"),
-   p("6. Can niche genres find their way to emerge to create their own space in the music industry or do they melt into a larger genre?"),
-   
+   p("3. To what extent does genre influence what songs might become popular overall?"),
+
    h1("Data Collection"),
    p("This project's data is collected through Spotify's API and Billboard Top 100 Charts from 2022-2023."),
    p("TikTok Song DataSet: https://www.kaggle.com/code/antoniosabatini/tiktok-popularity-track-eda-ml-models/input."),
