@@ -85,7 +85,16 @@ viz_2_sidebar <- sidebarPanel(
       choices = viz_2_df_colnames,
       selected = "tempo"
   ),
-  p("This graph displays the certain attributes that make up a song, ranging from tempo to valence. Songs are seperated by their track name.")
+  p("This graph displays the certain attributes that make up a song, ranging
+    from tempo to valence. Songs are seperated by their track name."),
+  p("Danceability: How suitable a track is for dancing combining elements of 
+    tempo, rhythm, and regularity. Using a scale from 0.0 to 1.0, from least
+    danceable to most danceable."),
+  p("Energy: Energy is a scale from 0.0 to 1.0 representing the intensity and
+    activity of the song."),
+  p("Valence: A scale from 0.0 to 1.0 describing the positiveness of the
+    song."),
+  p("Tempo: The tempo of the song in an estimated beats per minutes (BPM).")
 )
 
 viz_2_main_panel <- mainPanel(
