@@ -10,6 +10,7 @@ server <- function(input, output){
   # TODO Make outputs based on the UI inputs here
   output$viz_1_plot <- renderPlotly({
     viz_1_filtered_df <- df %>%
+      distinct(artist_name, .keep_all = TRUE) %>%
       #filter for user's artist
       filter(artist_name %in% input$artist_selection)
       
