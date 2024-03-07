@@ -39,7 +39,8 @@ server <- function(input, output){
                      aes(x = track_name,
                          y = !!as.name(input$viz_2_y_axis),
                          color = artist_name,
-                         ))
+                         )) +
+        labs(x = "Song Titles", color = "Artist Name")
       return(ggplotly(viz_2_plot))
   })
   
