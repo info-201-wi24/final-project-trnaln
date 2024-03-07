@@ -50,13 +50,14 @@ overview_tab <- tabPanel("Overview",
 
 viz_1_sidebar <- sidebarPanel(
   h2("Does an artist’s popularity influence what songs might become popular on TikTok?"),
-  p("This graph shows how popular an artist is and how many tracks they have trending on TikTok."),
   selectInput(
     inputId = "artist_selection",
     label = "Select an artist to view their overall popularity:",
     choices = df$artist_name,
     multiple = TRUE
-  )
+  ),
+  p("This graph shows how popular an artist is and how many tracks they have trending on TikTok.")
+  
   
 )
 
