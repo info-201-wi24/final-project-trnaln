@@ -144,22 +144,21 @@ conclusion_tab <- tabPanel("Conclusion",
   Bitch”, “Freak”, “Kiss Me More (ft. SZA)”, “Need to Know”, “Say So”,  “Woman”, and “You Right”. "),
   strong("What is the song attribute that tends to be the most effective in captivating its listeners?"),
   p("Danceability seems the most effective attribute in a song that captivates a listener, as most songs on our
-    dataset had a danceability higher than 0.5 rating. High danceability understandably helped songs perform on
-    TikTok as songs with catchy hooks and easily-remembered lyrics can stick in our heads and can be heard 
+    dataset had a danceability higher than 0.5 rating, scale out of 1. High danceability understandably helped songs perform better
+    on TikTok as songs with catchy hooks and easily-remembered lyrics can stick in our heads and can be heard 
     multiple times over without much issue. Tempo, energy, and valence had little to no correlation on how
-    a song performed, as many of the songs varied from high to low. Tempo was generally around 120 BPM, but
-    many songs were above and below the average of 120 BPM. Valence and energy also had little to no
-    correlation to captivating a listener as songs on our datasets varied wildly from low to high valence
-    and energy."),
+    a song performed. Tempo was generally around 120 BPM, but many songs were above and below the average of
+    120 BPM. Valence and energy also had little to no correlation to captivating a listener as songs on our
+    datasets varied wildly from low to high valence and energy."),
   strong("To what extent does genre influence what songs might become popular overall?"),
   p("Genre has a heavy influence on what songs can crack the top 100. Only 2 songs found in 
     our dataset fell under the ‘Rock’ genre, while the rest fell under either Rap/Hip-Hop or Pop. 
     No other genre was able to appear in the Top 100, so a popular song falling under a niche genre 
     on Spotify/TikTok doesn’t mean that it will necessarily translate to commercial success. Songs in 
-    other languages are also not likely to appear in the top 100, but that doesn’t mean it’s impossible. 
-    The same can be said of songs that belong to genres like reggae, R&B, . However, belonging to several 
-    genres will help a song, as “Talking to the Moon” by Bruno Mars can be classified into both the R&B and
-    Pop Genres, so belonging to bigger genres will definitely help its chances for national recognition."),
+    other languages are also not as likely to appear in the top 100, but that doesn’t mean it’s impossible. 
+    The same can be said of songs that belong to genres like reggae, R&B, classical, etc. However, belonging to several 
+    genres will help a song, an example being “Talking to the Moon” by Bruno Mars, which can be classified into both the R&B and
+    Pop Genres, so belonging to the bigger genres will definitely help its chances for national recognition."),
   img(src= "https://media.tenor.com/15YUsMWt4FEAAAAi/music.gif")
           
 )
